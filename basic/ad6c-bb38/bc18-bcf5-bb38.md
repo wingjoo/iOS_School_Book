@@ -147,28 +147,57 @@
   }
   ```
 
-* ### swift 매칭
+* ### interval matching
 
-  ㅇㅇㅇ변수를 사용할때는 변수이름을 호출하여 사용할 수 있습니다.
-
-  ```swift
-  var number1: Int = 100
-  var number2: Int = number1 // 여기에서 number1는 변수의 사용이며 현재 들어 있는 값(100)으로 여겨진다.
-  ```
-
-  변수의 값을 사용하여 연산도 가능한데요
+  스위프트의 switch-case문은 단순 값매칭을 넘어 좀더 다양한 방법으로 값 매칭이 가능합니다.   
+  그 첫번째 방법으로 범위 연산자를 통해 interval 매칭이 가능합니다. 아래 예제를 보겠습니다. 
 
   ```swift
-  var number1: Int = 100
-  var number2: Int = number1 
-  var sum: Int = number1 + number2 //sum의 값은 몇 일까요??
+  func getGradeVerSwitch(score:Int) -> String
+  {
+      var grade = "F"
+      switch score
+      {
+      case 90...100:
+          grade = "A"
+      case 80..<90:
+          grade = "B"
+      case 70..<80:
+          grade = "C"
+      default:
+          grade = "F"
+      }
+  }
   ```
 
-* ### 예제
+  "90...100" 범위 연산자를 통해 매칭 범위를 정하여 스위치 문의 값을 매칭 시킬수 있습니다.   
+  또 값 바인딩와 where문을 통해 추가 조건을 추가할 수 있다. 
 
-  다양한 예제를 통해서 변수를 확인해보도록 하겠습니다.
+  ```swift
+  func getGradeVerSwitch(score:Int) -> String
+  {
+      var grade = "F"
+      switch score
+      {
+      case let x where x > 100:
+          grade = "예외"
+      case let x where x >= 90:
+          grade = "A"
+      case let x where x >= 80:
+          grade = "B"
+      case let x where x >= 70:
+          grade = "C"
+      default:
+          grade = "F"
+      }
+  }
+  ```
 
-  한번 따라 쳐 보는것도 좋을듯 합니다!
+  score의 값는 각 case에 새롭게 정의한 상수 x에 바인딩되고, where문을 통해 x의 조건을 추가하며 값 매칭을 하는 방식입니다. 기존 다른언어에선 찾아볼수 없었던 방식으로 스위치문을 좀더 강력하게 만든 방법이였죠. 조금 어려운 방법이지만 잘쓰면 좋은 만큰 노력을 하여 익숙해 지시는 것도 좋을듯 합니다. 
+
+* ### switch-case 예제
+
+  다양한 예제를 통해서 스위치문에 대해서 더 알아봅시다.
 
   ```swift
   var myName: String = "WingMan" //선언 + 문자열 값 할당
