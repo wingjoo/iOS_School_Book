@@ -10,6 +10,6 @@
     * [반복문](basic/ad6c-bb38/bc18-bcf5-bb38.md)
   * [옵셔널](basic/bcc0-c218/c635-c154-b110.md)
   * [객체지향](basic/ac1d-ccb4-c9c0-d5a5.md)
-    * 클래스
+    * [클래스](basic/ac1d-ccb4-c9c0-d5a5/d074-b798-c2a4.md)
     * 레퍼런스
 
