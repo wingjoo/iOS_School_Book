@@ -8,9 +8,5 @@
   * [구문](basic/ad6c-bb38.md)
     * [조건문](basic/ad6c-bb38/c870-ac74-bb38.md)
     * [반복문](basic/ad6c-bb38/bc18-bcf5-bb38.md)
-<!--  * [옵셔널](basic/bcc0-c218/c635-c154-b110.md) -->
-<!--  * [객체지향](basic/ac1d-ccb4-c9c0-d5a5.md) -->
-  <!--  * [클래스](basic/ac1d-ccb4-c9c0-d5a5/d074-b798-c2a4.md) -->
- <!---   * [초기화\(initalize\)](cd08-ae30-d65428-initalize.md)---->
-   <!--- * [레퍼런스](basic/ac1d-ccb4-c9c0-d5a5/b808-d37c-b7f0-c2a4.md)--->
+  * [연습문제](c5f0-c2b5-bb38-c81c.md)
 
